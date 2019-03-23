@@ -1,0 +1,17 @@
+C:\Windows\System32\drivers\etc\hosts
+
+
+错误： com.sun.jersey.api.client.ClientHandlerException: java.net.UnknownHostException: peer3
+解决方法：https://blog.csdn.net/u010227638/article/details/79579704
+
+
+
+Eureka Server的传播与同步是具备方向性的。
+Eureka Server的同步遵循着一个非常简单的原则：只要有一条边将节点连接，就可以进行信息传播与同步
+参考网址：https://www.jianshu.com/p/36eeb724de74
+
+可用分片（available-replicase）理解
+
+高可用注册中心好处：
+1. 两两注册的方式可以实现集群中节点完全对等的效果，实现最高可用性集群，任何一台注册中心故障都不会影响服务的注册与发现
+2. Eureka Server具备单方面有指向的服务传播与同步机制，在一些对服务发现有限制的情况下，可以利用这样的机制进行服务注册与发现的的单向控制

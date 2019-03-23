@@ -1,18 +1,15 @@
 spring:
 #  application:
-#    name: EUREKA-HA-1
+#    name: EUREKA-HA-3
   application:
     name: EUREKA-HA
   profiles:
-    active: peer1
+    active: peer3
 server:
-  port: 8761
+  port: 8763
 eureka:
   instance:
-    hostname: peer1
+    hostname: peer3
   client:
     serviceUrl:
       defaultZone: http://peer1:8761/eureka/
-
-
-

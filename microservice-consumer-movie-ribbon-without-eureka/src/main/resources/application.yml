@@ -11,9 +11,14 @@ eureka:
       defaultZone: http://user:password123@localhost:8761/eureka
   instance:
     prefer-ip-address: true
+# 设置property ribbon.eureka.enable=false将会明确的让Eureka的ribbon失效
 ribbon:
   eureka:
    enabled: false
+# 配置服务器列表
 microservice-provider-user:
   ribbon:
     listOfServers: localhost:7900
+#microservice-provider-user2:
+#  ribbon:
+#    listOfServers: localhost:7901

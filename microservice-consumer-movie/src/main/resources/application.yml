@@ -3,7 +3,7 @@ spring:
     name: microservice-consumer-movie
 server:
   port: 7901
-user: 
+user:
   userServicePath: http://localhost:7900/simple/
 eureka:
   client:
@@ -13,3 +13,4 @@ eureka:
       defaultZone: http://user:password123@localhost:8761/eureka
   instance:
     prefer-ip-address: true
+#    hostname: LINXINMIN-20180508PJ

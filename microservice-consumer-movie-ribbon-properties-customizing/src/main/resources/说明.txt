@@ -1,0 +1,10 @@
+从版本1.2.0开始，Spring Cloud支持使用属性来自定义Ribbon客户端。
+这种方式比使用Java代码配置的方式更方便。
+支持的属性如下，应以<clientName>.ribbon.为前缀：
+
+
+NFLoadBalancerClassName：应配置ILoadBalancer
+NFLoadBalancerRuleClassName：应配置IRule
+NFLoadBalancerPingClassName：应配置IPing
+NIWSServerListClassName：应配置ServerList
+NIWSServerListFilterClassName应配置ServerListFilter

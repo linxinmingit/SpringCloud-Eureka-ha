@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>microservice-provider-user</artifactId>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>microservice-provider-user</name>
 	<description>Demo project for Spring Boot</description>
 
-	<parent>
+    <parent>
 		<groupId>com.itmuch.cloud</groupId>
 		<artifactId>microservice-spring-cloud</artifactId>
 		<version>0.0.1-SNAPSHOT</version>

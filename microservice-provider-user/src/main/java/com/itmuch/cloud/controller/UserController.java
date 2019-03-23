@@ -4,13 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.google.common.collect.Lists;
 import com.itmuch.cloud.entity.User;
@@ -51,6 +48,13 @@ public class UserController {
   public User postUser(@RequestBody User user) {
     return user;
   }
+
+//  @PutMapping("/user")
+//  @ResponseBody
+//  public Integer putUser(@RequestParam("id") Integer id){
+//    System.out.println("------------>> "+id);
+//    return id;
+//  }
 
   // 该请求不会成功
   @GetMapping("/get-user")

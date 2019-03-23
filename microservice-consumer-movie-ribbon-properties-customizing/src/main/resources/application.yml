@@ -13,4 +13,7 @@ eureka:
     prefer-ip-address: true
 microservice-provider-user:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule         #以通过这个配置项定制需要的负载均衡规则
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
+#    NFLoadBalancerPingClassName:  #用于配置查看服务器是否存活。
+#    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList   #是服务器列表的处理类

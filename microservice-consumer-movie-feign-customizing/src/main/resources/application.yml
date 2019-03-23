@@ -9,12 +9,16 @@ eureka:
       enabled: true
     serviceUrl:
       defaultZone: http://user:password123@localhost:8761/eureka
+      #启用Eureka客户端
+    enabled: true
   instance:
     prefer-ip-address: true
 logging:
   level:
     com.itmuch.cloud.feign.UserFeignClient: DEBUG
-
+#ribbon:
+#  eureka:
+#    enabled: true
 # 解决第一次请求报超时异常的方案：
 # hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
 # 或者：

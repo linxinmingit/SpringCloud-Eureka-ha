@@ -22,7 +22,6 @@ public class MovieController {
     // http://localhost:7900/simple/
     // VIP virtual IP
     // HAProxy Heartbeat
-
     ServiceInstance serviceInstance = this.loadBalancerClient.choose("microservice-provider-user");
     System.out.println("===" + ":" + serviceInstance.getServiceId() + ":" + serviceInstance.getHost() + ":" + serviceInstance.getPort());
 

@@ -1,0 +1,5 @@
+随机 (Random)
+轮询 (RoundRobin)
+一致性哈希 (ConsistentHash)
+哈希 (Hash)
+加权（Weighted）

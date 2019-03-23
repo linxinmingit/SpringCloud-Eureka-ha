@@ -12,8 +12,9 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
-@RibbonClient(name = "microservice-provider-user", configuration = TestConfiguration.class)
-@ComponentScan(excludeFilters = { @ComponentScan.Filter(type = FilterType.ANNOTATION, value = ExcludeFromComponentScan.class) })
+//@RibbonClient(name = "microservice-provider-user", configuration = TestConfiguration.class)
+//@ComponentScan(excludeFilters = { @ComponentScan.Filter(type = FilterType.ANNOTATION, value = ExcludeFromComponentScan.class) })
+//@RibbonClient(name = "foo", configuration = FooConfiguration.class)
 public class ConsumerMovieRibbonApplication {
 
   @Bean
